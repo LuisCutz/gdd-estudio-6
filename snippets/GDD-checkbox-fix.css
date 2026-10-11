@@ -1,0 +1,28 @@
+/*
+GDD — Corrección visual de casillas de verificación
+Autor de la guía: Ing. Luis Fernando Villafaña Rejón
+
+Este ajuste evita que algunos temas de Obsidian superpongan
+la casilla de tarea con el texto en modo lectura.
+*/
+
+.markdown-preview-view li.task-list-item,
+.markdown-rendered li.task-list-item {
+    position: relative;
+    padding-inline-start: 0.15em;
+}
+
+.markdown-preview-view li.task-list-item > .task-list-item-checkbox,
+.markdown-rendered li.task-list-item > .task-list-item-checkbox {
+    position: static !important;
+    display: inline-block !important;
+    margin-inline-end: 0.55em !important;
+    margin-inline-start: 0 !important;
+    vertical-align: middle !important;
+    transform: none !important;
+}
+
+.markdown-preview-view li.task-list-item p,
+.markdown-rendered li.task-list-item p {
+    display: inline;
+}
