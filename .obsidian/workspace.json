@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01 - Visión/01 - Ficha del Proyecto.md",
-                "mode": "preview",
+                "file": "00 - Acerca de esta guía.md",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "01 - Ficha del Proyecto"
+              "title": "00 - Acerca de esta guía"
             }
           }
         ]
@@ -188,16 +188,16 @@
   },
   "active": "8f0fb23db9b275d5",
   "lastOpenFiles": [
+    "00 - Índice.md",
+    "README.md",
+    "01 - Visión/03 - Público y Plataforma.md",
+    "01 - Visión/01 - Ficha del Proyecto.md",
     "11 - Referencia de Diseño/02 - Subgéneros y Combinaciones.md",
     "11 - Referencia de Diseño/01 - Géneros.md",
     "11 - Referencia de Diseño/00 - Biblioteca de Clasificación.md",
     "11 - Referencia de Diseño/05 - Modos de Juego.md",
     "11 - Referencia de Diseño/03 - Plataformas y Consolas.md",
-    "01 - Visión/03 - Público y Plataforma.md",
     "01 - Visión/02 - Visión del Juego.md",
-    "01 - Visión/01 - Ficha del Proyecto.md",
-    "00 - Índice.md",
-    "README.md",
     "00 - Acerca de esta guía.md",
     "01 - Visión/04 - Pilares de Diseño.md"
   ]
