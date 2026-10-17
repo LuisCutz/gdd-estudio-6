@@ -6,31 +6,31 @@ Define las condiciones técnicas necesarias para ejecutar y desarrollar el video
 
 ## Requisitos mínimos
 
-**Sistema operativo:**
+**Sistema operativo:** Windows 10 (21H1+)
 
-**CPU:**
+**CPU:** Arquitectura x64
 
-**GPU:**
+**GPU:** Compatible con DirectX 10
 
-**RAM:**
+**RAM:** 8 GB
 
-**Almacenamiento:**
+**Almacenamiento:** 200 Gb SSD
 
-**Resolución:**
+**Resolución:** 
 
 **Conexión:**
 
 ## Requisitos recomendados
 
-**Sistema operativo:**
+**Sistema operativo:** Windows 11
 
-**CPU:**
+**CPU:** Arquitectura x64 o ARM64 con set de instrucciones SSE2
 
-**GPU:**
+**GPU:** Compatible con DirectX 11, 12 o Vulkan nativo
 
-**RAM:**
+**RAM:** 16 GB o más
 
-**Almacenamiento:**
+**Almacenamiento:** 512 GB SSD
 
 ## Objetivos de rendimiento
 

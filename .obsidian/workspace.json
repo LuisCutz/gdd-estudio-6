@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "08 - Producción/04 - Backlog del Proyecto.md",
+                "file": "00 - Acerca de esta guía.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "04 - Backlog del Proyecto"
+              "title": "00 - Acerca de esta guía"
             }
           }
         ]
@@ -199,6 +199,14 @@
     "07 - Tecnología/03 - Requisitos Técnicos.md",
     "07 - Tecnología/02 - Motor y Herramientas.md",
     "11 - Referencia de Diseño/03 - Plataformas y Consolas.md",
+    "00 - Índice.md",
+    "README.md",
+    "01 - Visión/03 - Público y Plataforma.md",
+    "01 - Visión/01 - Ficha del Proyecto.md",
+    "01 - Visión/02 - Visión del Juego.md",
+    "00 - Acerca de esta guía.md",
+    "00 - Índice.md",
+    "README.md",
     "11 - Referencia de Diseño/02 - Subgéneros y Combinaciones.md",
     "11 - Referencia de Diseño/05 - Modos de Juego.md",
     "11 - Referencia de Diseño/06 - Clasificaciones y Etiquetas.md",
@@ -212,6 +220,9 @@
     "01 - Visión/03 - Público y Plataforma.md",
     "01 - Visión/02 - Visión del Juego.md",
     "README.md",
+    "11 - Referencia de Diseño/05 - Modos de Juego.md",
+    "11 - Referencia de Diseño/03 - Plataformas y Consolas.md",
+    "01 - Visión/02 - Visión del Juego.md",
     "00 - Acerca de esta guía.md",
     "01 - Visión/04 - Pilares de Diseño.md"
   ]

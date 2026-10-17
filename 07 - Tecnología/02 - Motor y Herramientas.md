@@ -6,9 +6,9 @@ Documenta las herramientas utilizadas para crear el videojuego y por qué fueron
 
 ## Motor
 
-**Motor:**
+**Motor:** Unity 6
 
-**Versión:**
+**Versión:** 6000.6.3f1
 
 **Renderizado:**
 
@@ -18,15 +18,18 @@ Documenta las herramientas utilizadas para crear el videojuego y por qué fueron
 
 ## Lenguajes
 
-| Lenguaje | Uso |
-|---|---|
-| | |
+| Lenguaje | Uso                       |
+| -------- | ------------------------- |
+| C#       | Lógica del juego, scripts |
 
 ## Herramientas
 
-| Herramienta | Propósito | Versión |
-|---|---|---|
-| | | |
+| Herramienta        | Propósito                                                   | Versión    |
+| ------------------ | ----------------------------------------------------------- | ---------- |
+| Unity              | Motor, editor de escenas y físicas                          | 6000.6.3f1 |
+| Visual Studio Code | Editor de codigo                                            |            |
+| Git y Git Hub      | Control de versiones y trabajo remoto mediante repositorios | 2.55.0     |
+|                    |                                                             |            |
 
 ## Dependencias
 
@@ -34,9 +37,9 @@ Lista librerías, paquetes, plugins o servicios externos.
 
 ## Convenciones del proyecto
 
-- Estructura de carpetas
+- Estructura de carpetas: Assets/Animations, Assets/Audio, Assets/Materials, Assets/Prefabs, Assets/Scenes, Assets/Scripts, Assets/Settings, Assets/Sprites
 - Nomenclatura
-- Control de versiones
+- Control de versiones:
 - Formato de assets
 - Convenciones de código
 
