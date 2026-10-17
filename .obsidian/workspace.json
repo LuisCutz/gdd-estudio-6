@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00 - Acerca de esta guía.md",
+                "file": "07 - Tecnología/05 - Seguridad y Riesgos Técnicos.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "00 - Acerca de esta guía"
+              "title": "05 - Seguridad y Riesgos Técnicos"
             }
           }
         ]
@@ -188,17 +188,31 @@
   },
   "active": "8f0fb23db9b275d5",
   "lastOpenFiles": [
-    "00 - Índice.md",
-    "README.md",
+    "07 - Tecnología/04 - Datos y Persistencia.md",
+    "07 - Tecnología/03 - Requisitos Técnicos.md",
+    "07 - Tecnología/02 - Motor y Herramientas.md",
+    "07 - Tecnología/01 - Arquitectura Técnica.md",
+    "07 - Tecnología/05 - Seguridad y Riesgos Técnicos.md",
+    "08 - Producción/05 - Gestión de Cambios.md",
+    "08 - Producción/04 - Backlog del Proyecto.md",
+    "08 - Producción/03 - Roadmap.md",
+    "08 - Producción/02 - Roles y Responsabilidades.md",
+    "08 - Producción/01 - Alcance.md",
+    "10 - Referencia/02 - Referencias e Inspiración.md",
+    "10 - Referencia/01 - Glosario.md",
+    "09 - Calidad/01 - Criterios de Calidad.md",
+    "05 - Arte y Audio/01 - Dirección de Arte.md",
     "01 - Visión/03 - Público y Plataforma.md",
     "01 - Visión/01 - Ficha del Proyecto.md",
+    "01 - Visión/02 - Visión del Juego.md",
+    "00 - Acerca de esta guía.md",
+    "00 - Índice.md",
+    "README.md",
     "11 - Referencia de Diseño/02 - Subgéneros y Combinaciones.md",
     "11 - Referencia de Diseño/01 - Géneros.md",
     "11 - Referencia de Diseño/00 - Biblioteca de Clasificación.md",
     "11 - Referencia de Diseño/05 - Modos de Juego.md",
     "11 - Referencia de Diseño/03 - Plataformas y Consolas.md",
-    "01 - Visión/02 - Visión del Juego.md",
-    "00 - Acerca de esta guía.md",
     "01 - Visión/04 - Pilares de Diseño.md"
   ]
 }

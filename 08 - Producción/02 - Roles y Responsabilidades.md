@@ -6,9 +6,13 @@ Define quién es responsable de cada área y evita que tareas importantes queden
 
 ## Equipo
 
-| Integrante | Rol principal | Responsabilidades |
-|---|---|---|
-| | | |
+| Integrante                           | Rol principal | Responsabilidades |
+| ------------------------------------ | ------------- | ----------------- |
+| Cutz Martinez Luis Daniel            |               |                   |
+| Escalante Díaz Luis Enrique          |               |                   |
+| May Bustos Fernando Jesus            |               |                   |
+| Ramirez Cortez Nadia Arleth          |               |                   |
+| Sanchez Alvarez Adayarith del Carmen |               |                   |
 
 ## Áreas
 
