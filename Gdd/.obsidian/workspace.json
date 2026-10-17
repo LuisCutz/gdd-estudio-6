@@ -1,24 +1,20 @@
 {
   "main": {
-    "id": "7881ba031d60064f",
+    "id": "5d68637a5aac2883",
     "type": "split",
     "children": [
       {
-        "id": "b5f972b23922e015",
+        "id": "dcee07e21e2778b7",
         "type": "tabs",
         "children": [
           {
-            "id": "8423c95cf7bc8baa",
+            "id": "16ab4b8929656589",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "05 - Arte y Audio/05 - Audio y Música.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "05 - Audio y Música"
+              "title": "Nueva pestaña"
             }
           }
         ]
@@ -27,15 +23,30 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "afbcb0fb3d89c650",
+    "id": "638370a1db120ca5",
     "type": "split",
     "children": [
       {
-        "id": "55bbfa67e0663ff2",
+        "id": "caa65d51000085de",
         "type": "tabs",
         "children": [
           {
-            "id": "452bdfadacd760a4",
+            "id": "7f956d7648719862",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Explorador de archivos"
+            }
+          },
+          {
+            "id": "dd24470831b60af0",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -52,7 +63,7 @@
             }
           },
           {
-            "id": "7d1588173f244099",
+            "id": "eee96159f66dfeeb",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -63,39 +74,23 @@
               "icon": "lucide-bookmark",
               "title": "Marcadores"
             }
-          },
-          {
-            "id": "ccaad994efbdfe25",
-            "type": "leaf",
-            "state": {
-              "type": "file-explorer",
-              "state": {
-                "sortOrder": "alphabetical",
-                "autoReveal": false,
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-folder-closed",
-              "title": "Explorador de archivos"
-            }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 270.5478324890137
+    "width": 300
   },
   "right": {
-    "id": "2e1647aeb6be0f01",
+    "id": "395c3d946a49ba2f",
     "type": "split",
     "children": [
       {
-        "id": "681a0029ddf82f6d",
+        "id": "fab7ea32ac824d2b",
         "type": "tabs",
         "children": [
           {
-            "id": "44694de2bbd172d1",
+            "id": "8a44104321ee979e",
             "type": "leaf",
             "state": {
               "type": "backlink",
@@ -113,7 +108,7 @@
             }
           },
           {
-            "id": "2da3bca3612c0953",
+            "id": "3029f3cc05193a09",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
@@ -126,7 +121,7 @@
             }
           },
           {
-            "id": "ae8c3c6509cbea3e",
+            "id": "3a84b6fd6a3a07fe",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -141,7 +136,7 @@
             }
           },
           {
-            "id": "7858c1830bd78e04",
+            "id": "9c6dc1b42ea1d394",
             "type": "leaf",
             "state": {
               "type": "all-properties",
@@ -155,7 +150,7 @@
             }
           },
           {
-            "id": "7389dd647a8284e0",
+            "id": "c2b0772455e20b02",
             "type": "leaf",
             "state": {
               "type": "outline",
@@ -186,30 +181,9 @@
       "bases:Crear nueva base": false
     }
   },
-  "active": "8423c95cf7bc8baa",
+  "active": "16ab4b8929656589",
   "lastOpenFiles": [
-    "01 - Visión/01 - Ficha del Proyecto.md",
-    "05 - Arte y Audio/03 - Entornos.md",
-    "05 - Arte y Audio/02 - Personajes y Animación.md",
-    "05 - Arte y Audio/01 - Dirección de Arte.md",
-    "04 - Contenido/05 - Misiones y Desafíos.md",
-    "04 - Contenido/04 - Objetos y Coleccionables.md",
-    "04 - Contenido/03 - Enemigos y NPC.md",
-    "04 - Contenido/02 - Niveles.md",
-    "04 - Contenido/01 - Estructura del Contenido.md",
-    "05 - Arte y Audio/05 - Audio y Música.md",
-    "05 - Arte y Audio/04 - Interfaz Visual.md",
-    "file:C:/Users/alvar/AppData/Local/Packages/5319275A.WhatsAppDesktop_cv1g1gvanyjgm/LocalState/sessions/84CF34F8A01D4A7C26F4B059AA0AE0F623CA969D/transfers/2026-42/Arte y Audio.pdf",
-    "01 - Visión/02 - Visión del Juego.md",
-    "00 - Acerca de esta guía.md",
-    "00 - Índice.md",
-    "README.md",
-    "01 - Visión/03 - Público y Plataforma.md",
-    "11 - Referencia de Diseño/02 - Subgéneros y Combinaciones.md",
-    "11 - Referencia de Diseño/01 - Géneros.md",
-    "11 - Referencia de Diseño/00 - Biblioteca de Clasificación.md",
-    "11 - Referencia de Diseño/05 - Modos de Juego.md",
-    "11 - Referencia de Diseño/03 - Plataformas y Consolas.md",
-    "01 - Visión/04 - Pilares de Diseño.md"
+    "cree un enlace.md",
+    "Bienvenido.md"
   ]
 }
