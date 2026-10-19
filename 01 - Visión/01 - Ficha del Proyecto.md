@@ -15,8 +15,8 @@ Esta ficha identifica el proyecto de forma rápida. Debe permitir que alguien qu
 | **Equipo**                   | - Cutz Martinez Luis Daniel<br>    <br>- Escalante Diaz Luis Enrique<br>    <br>- May Bustos Fernando Jesus<br>    <br>- Ramirez Cortez Nadia Arleth<br>    <br>- Sanchez Alvarez Adayarith del CarmenIntegrantes |
 | **Responsable del proyecto** | Cutz Martinez Luis Daniel                                                                                                                                                                                         |
 | **Fecha de inicio**          | 2026-09-29                                                                                                                                                                                                        |
-| **Última actualización**     | 2026-10-10                                                                                                                                                                                                        |
-| **Repositorio**              | [<!-- https://github.com/LuisCutz/gdd-estudio-6.git-->](https://github.com/LuisCutz/gdd-estudio-6.git)                                                                                                            |
+| **Última actualización**     | 2026-10-18                                                                                                                                                                                                        |
+| **Repositorio**              | https://github.com/LuisCutz/gdd-estudio-6                                                                                                                                                                         |
 
 ## Identidad del videojuego
 
