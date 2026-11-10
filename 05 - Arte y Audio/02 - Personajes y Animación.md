@@ -16,11 +16,11 @@ Emmet es una figura de cuerpo delgado con una **cabeza grande y redonda** que oc
 
 | Animación   | Dos direcciones                               |
 | ----------- | --------------------------------------------- |
-| Idle        | ![[img/Pasted image 20261109192752.png\|414]] |
-| Caminar     | ![[img/Pasted image 20261109193010.png\|353]] |
-| Saltar      | ![[img/Pasted image 20261109193135.png\|335]] |
-| Muerte      | ![[img/Pasted image 20261109193318.png\|340]] |
-| Reaparicion | ![[img/Pasted image 20261109193341.png\|404]] |
+| Idle        | ![Animación idle de Emmet](../img/Pasted%20image%2020261109192752.png) |
+| Caminar     | ![Animación de caminar de Emmet](../img/Pasted%20image%2020261109193010.png) |
+| Saltar      | ![Animación de salto de Emmet](../img/Pasted%20image%2020261109193135.png) |
+| Muerte      | ![Animación de muerte de Emmet](../img/Pasted%20image%2020261109193318.png) |
+| Reaparicion | ![Animación de reaparición de Emmet](../img/Pasted%20image%2020261109193341.png) |
 
 
 ## Interacción
