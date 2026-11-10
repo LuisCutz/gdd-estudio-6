@@ -1,46 +1,44 @@
 # Dirección de Arte
 
-## Descripción de la sección
+El juego adopta un estilo **pixel art 2D** basándose en la estética de plataformas creadas a principios de los 2000. Toma como referencia a _Level Devil_, _Not a Troll Game_ y _Never Give Up_ en tres aspectos: el plataformeo de precisión, las trampas engañosas y la dificultad alta. El objetivo visual es mantener un ciclo competitivo de **frustración controlada, curiosidad y burla juguetona**, en el que el escenario parece sencillo y confiable hasta que deja de serlo, y el jugador quiere superar el nivel en lugar de abandonarlo.
 
-Define la identidad visual del videojuego y las reglas que deben seguir los recursos gráficos.
+El nivel de realismo es **sencillo**: no se busca construir el juego con detalles  ni texturas complejas, sino con formas limpias y legibles. Todo el escenario se construye con **formas geométricas estructuradas** (rectángulos, bloques y bordes rectos de píxel) para plataformas e interfaz, mientras que los peligros usan **formas puntiagudas ,objetos que no parecen ofensivos, plataformas movedizas **. La iluminación es **plana**, sin sombras dinámicas ni luces en tiempo real; la jerarquía visual se logra únicamente mediante el contraste de color.
 
-## Identidad visual
-
-**Estilo:** Pixel art en 2D inspirado en los videojuegos de plataformas antiguos con estética de  principios de los 2000.
-
-**Referencias:** _Level Devil_, _Not a Troll Game_ y _Never Give Up_ especialmente por sus mecánicas de plataformas de precisión, trampas engañosas y alta dificultad.
-
-**Sensación buscada:** Atrapado en un bucle competitivo y retador. Se busca generar una mezcla de frustración controlada, curiosidad y picardía, donde la inestabilidad del juego y las burlas sarcásticas del sistema enciendan el orgullo y la dignidad del jugador, motivándolo a decir _"tengo que pasar este nivel sí o sí"_ en lugar de abandonar el juego
-
-**Nivel de realismo:** Sencillo
-
-**Formas predominantes:** Formas geométricas estructuradas para plataformas e interfaz (rectángulos, bloques y bordes pixelados rectos) combinadas con formas puntiagudas o de advertencia para las trampas y peligros.
-
-**Iluminación:** Iluminación plana sin sombras complejas, coherente con las limitaciones de los sistemas antiguos de los años 2000, utilizando contrastes de color para destacar los elementos clave.
-
-**Materiales:**
+La cámara es **ortográfica y de desplazamiento lateral**, centrada en el protagonista con un tamaño ortográfico de `[completar]` unidades. Los sprites se importan en Unity con filtro `Point (no filter)`, sin compresión y con 12 píxeles por unidad, de modo que todo el arte comparte la misma cuadrícula y no aparecen píxeles de tamaños distintos en pantalla.
 
 ## Paleta de color
 
-**Colores principales:**
-- **Verde azulado (`#3A9B8D`):** Utilizado para elementos interactivos y detalles relacionados con el sistema.
-- **Gris carbón (`#342F33`):** Fondos oscuros, estructuras base y elementos que transmitan antigüedad o deterioro.
-**Colores secundarios:**
-- **Marrón rojizo (`#7C423B`):** Detalles del entorno, superficies de plataformas y ambientación secundaria.
-- **Crema (`#FDFEC2`):** Textos, tipografía retro, elementos destacados y contraste visual principal.
-**Colores para información jugable:**
-- **Rojo oscuro (`#8F2A31`):** Indicadores de peligro, trampas, advertencias y amenazas.
+| Color                        | Código      | Función                                                                                |
+| ---------------------------- | ----------- | -------------------------------------------------------------------------------------- |
+| **Verde azulado (principal)  | `#3A9B8D`   | Utilizado para elementos interactivos y detalles relacionados con el sistema.          |
+| **Gris carbón (principal)    | `#342F33`   | Fondos oscuros, estructuras base y elementos que transmitan antigüedad o deterioro.    |
+| **Marrón rojizo (secundario) | `#7C423B`   | Detalles del entorno, superficies de plataformas y ambientación secundaria.            |
+| **Crema (secundario)         | `#FDFEC2`   | Textos, tipografía retro, elementos destacados y contraste principal del protagonista. |
+| **Rojo oscuro (acento)       | `#8F2A31`   | Peligro, trampas activadas, advertencias y amenazas.                                   |
+| **Azúl oscuro (principal)    | `#001c3bfc` | Utilizado en detalles para todas las plataformas rectangulares y cubos.                |
+
+## Tratamiento Visual
+
+| Uso                      | Tratamiento presente                                                                                                                        |
+| ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------- |
+| Fondo                    | Gris carbón plano, sin degradados ni capas de parallax recargadas, para que nada compita con la zona de juego.                              |
+| Plataformas y materiales | Bloques de azul oscuro y verde azulado con borde de píxel definido y textura mínima de uno o dos tonos, sin sombreado volumétrico.          |
+| Jugador                  | Silueta compacta con gris carbón como color dominante, legible sobre cualquier fondo de la paleta.                                          |
+| Elementos interactivos   | Azul oscuro y verde azulado en paredes y plataformas.                                                                                       |
+| Peligros Visibles        | Picos en rojo oscuro, identificables de un vistazo.                                                                                         |
+| Trampas ocultas          | Verde azulado y formas del entorno (cristales, bloques translúcidos, falsos coleccionables), indistinguibles del escenario hasta activarse. |
+| Interfaz y texto         | Tipografía **Press Start 2P** en crema sobre gris carbón, sin elementos fuera del estilo pixel art.                                         |
+
 ## Reglas visuales
 
-1.**Claridad de lectura:** Todos los elementos interactivos, peligros y el protagonista deben distinguirse claramente del fondo en todo momento.
+1.**Claridad de lectura:** el protagonista, los elementos interactivos y los peligros visibles siempre deben distinguirse del fondo, incluso en movimiento.
+
 2.**Consistencia retro:** Todo recurso gráfico e interfaz debe mantener el estilo _pixel art_ y la tipografía de corte clásico (como _Press Start 2P_).
-3.**Visibilidad engañosa:** Las trampas deben estar integradas visualmente y ser perceptibles en el escenario, pero su comportamiento y activación deben sorprender al jugador.
+
+3.**Visibilidad engañosa:** las trampas ocultas se integran en el escenario, pero su comportamiento sorprende al jugador. La sorpresa debe venir de la mecánica y no de un problema de lectura: una vez activada, la trampa se reconoce de inmediato como amenaza.
 
 ## Referencias
-
-Añade enlaces o imágenes dentro de la carpeta del proyecto.
-
--
+Las imágenes de referencia de _Level Devil_, _Not a Troll Game_ y _Never Give Up_ , se guardan en [[02 - Referencias e Inspiración]]. Los tamaños de sprite y las animaciones del protagonista se detallan en [[02 - Personajes y Animación]].
 
 
 > **Navegación:** [[00 - Índice]] · ← [[05 - Misiones y Desafíos]] · [[02 - Personajes y Animación]] →
