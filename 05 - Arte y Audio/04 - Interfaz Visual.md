@@ -1,59 +1,87 @@
 # Interfaz Visual
 
-## Descripción de la sección
-
-Documenta la información que el juego muestra al jugador y las reglas visuales de la interfaz.
-
+La interfaz imita las ventanas de un sistema operativo antiguo: es el terreno de Sistema.exe. Es mínima durante el juego para que la atención quede en las trampas. La estructura de menús se define en [[02 - UI y Menús]].
 ## HUD
 
 La interfaz es minimalista para mantener la pantalla despejada y centrar la atención en los obstáculos y trampas del nivel.
-Elementos:
 
-- **Vida:** Contador visible de muertes o reintentos acumulados en la partida destacado visualmente para alimentar el reto del juego.
-- **Energía:** No aplica
-- **Munición:** No aplica
-- **Objetivo:** Pequeños textos o mensajes sarcásticos del Sistema que aparecen contextualmente en pantalla al fallar o avanzar.
-- **Mapa:** No aplica
-- **Recursos:** No aplica
-- **Indicadores contextuales:** Prompts e indicaciones de interacción (ejemplo: _"Presiona `[Espacio]` para saltar"_ o _"Presiona `[R]` para reiniciar"_).
+| Elemento                  | Posición                    | Descripción                                                                                                                                       |
+| ------------------------- | --------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Contador de muertes       | Arriba a la izquierda       | Icono de calavera y número acumulado de la partida; el número da un pequeño salto cada vez que sube.                                              |
+| Cronómetro                | Arriba a la derecha         | Tiempo transcurrido en formato `MM:SS`; se detiene en pausa.                                                                                      |
+| Llave                     | Bajo el contador de muertes | Icono que aparece al recoger la llave y desaparece si se pierde al morir.                                                                         |
+| Mensajes de Sistema.exe   | Arriba al centro            | Cuadro de texto que aparece al morir o al llegar a ciertos puntos, con texto escrito letra por letra y sonido; se cierra solo tras unos segundos. |
+| Indicaciones contextuales | Abajo al centro             | Solo en el tutorial del Nivel 1 (ejemplo: _"Presiona `[Espacio]` para saltar"_ o _"Presiona `[R]` para reiniciar"_).                              |
+No hay barra de vida, energía, munición, mapa ni inventario.
 
+---
 ## Jerarquía visual
 
-¿Qué información debe verse primero, segundo y tercero?
-- **Primero:** El área de juego activa (protagonista, plataformas y trampas directas) para garantizar la jugabilidad y lectura instantánea.
-- **Segundo:** Indicadores de vida/intentos y los mensajes o burlas del Sistema emergentes en pantalla.
-- **Tercero :** Indicaciones contextuales de interacción y marcos decorativos que simulan la ventana de un programa antiguo/sistema operativo.
-## Estados
+- . **Área de juego:** Emmet, plataformas y trampas, siempre libres de elementos del HUD.
+2. **Mensajes de Sistema.exe.**
+3. **Contador de muertes y llave.**
+4. **Cronómetro e indicaciones contextuales.**
+---
+## Sistema.exe
 
-Documenta estados normales, advertencias, daño, éxito, error y bloqueo.
-- **Estado Normal:** Ventanas e interfaz limpias con tipografía clara en tono crema y bordes rectos estilo retro.
-- **Advertencias:** Cuadros de diálogo o texto con tinte rojo oscuro que simulan alertas de error de sistema cuando se activan trampas o peligros.
-- **Daño / Derrota:** Flash rápido de pantalla con efecto _glitch_ o marco de error de Windows/CRT antiguo al morir.
-- **Éxito :** Ventana emergente con mensaje retro de "Nivel Completado" o "Proceso Exitoso", resaltado en verde azulado .
-- **Error / Bloqueo:** Simulación de fallo en el programa o congelamiento breve de interfaz usado humorísticamente por el Sistema antes de reaparecer al personaje.
+Sistema.exe no tiene cuerpo: es el programa que controla el nivel y solo se manifiesta a través de sus ventanas. Su "cara" es un icono de programa antiguo (un ojo dentro de un monitor), y su personalidad se transmite con el texto, el color de la ventana y pequeñas fallas visuales. Nunca aparece dentro del área de juego.
+![Mensajes de Sistema.exe](../img/sistemaexe_mensajes_gif.gif)
+
+#### Estructura de la ventana
+
+![Referencia visual de Sistema.exe](../img/sistemaexe_referencia.png)
+
+| Parte           | Descripción                                                                                                |
+| --------------- | ---------------------------------------------------------------------------------------------------------- |
+| Barra de titulo | Gris carbón más claro, con el texto a la ziquierda de `El sistema`.                                        |
+| Retrato         | Icono de `32 × 32` px a la izquierda del texto, con la expresión del mensaje.                              |
+| Botones         | `[-]` y `[X]` a la derecha. Son decorativos: Emmet no puede cerrar a Sistema.exe.                          |
+| Cuerpo          | Fondo gris carbón, borde recto de 1 px y texto crema alineado a la izquierda, de 1 a 3 líneas como máximo. |
+| Cursor          | Guion bajo (`_`) parpadeando al final del texto mientras escribe y al terminar.                            |
+- **Posición:** arriba al centro, sin tapar el área de juego.
+- **Tamaño:** ancho fijo de aproximadamente el 60 % de la pantalla; el alto depende del número de líneas.
+
+#### Comportamiento del texto
+- **Aparición:** la ventana aparece de golpe (_pop-up_) con un parpadeo de un fotograma, sin transiciones suaves.
+- **Escritura:** letra por letra, a unos 30–40 caracteres por segundo, con un sonido corto por letra (ver [[05 - Audio y Música]]).
+- **Tipografía:** Press Start 2P en mayúsculas, de 14 a 16 pt, en crema sobre gris carbón.
+- **Cierre:** se cierra sola unos 3 segundos después de terminar de escribir, también de golpe.
+- **Prioridad:** si llega un mensaje nuevo, reemplaza al anterior en lugar de apilarse.
+
+
+## Estados de la Ventana
+
+| Estado               | Representación                                                                |
+| -------------------- | ----------------------------------------------------------------------------- |
+| Normal               | Ventanas limpias en gris carbón, texto crema y bordes rectos.                 |
+| Advertencia          | Cuadro de Sistema.exe con borde e icono `[!]` en rojo oscuro.                 |
+| Muerte               | Destello rojo breve con *glitch* o parpadeo CRT; el contador de muertes sube. |
+| Éxito                | Ventana emergente «Nivel completado» con borde verde azulado.                 |
+| Acción no disponible | Opción en gris (por ejemplo, Continuar sin partida guardada).                 |
+
 ## Convenciones
 
-**Tipografía:** Press Start 2P (o tipografías pixeladas similares) para mantener el estilo retro de los años 2000.
+- **Tipografía:** Press Start 2P (o tipografías pixeladas similares) para mantener el estilo retro de los años 2000.
 
-**Iconografía:** Íconos simples en pixel art inspirados en ventanas de sistemas operativos antiguos (botones de cerrar `[X]`, minimizar `[-]`, cursores retro e íconos de advertencia `[!]`).
+- **Iconografía:**  iconos de `16 × 16` px en pixel art con estética de sistema operativo antiguo (botones de cerrar `[X]`, minimizar `[-]`, cursores retro e íconos de advertencia `[!]`).
 
-**Tamaños mínimos:**
-- Texto en pantalla _8pt - 10pt para subtítulos e indicaciones.
-- Títulos de menús / Mensajes del Sistema: 14pt- 16pt para fácil lectura.
+- **Tamaños mínimos:**
+	- Texto en pantalla _8pt - 10pt para subtítulos e indicaciones.
+	- Títulos de menús / Mensajes del Sistema: 14pt- 16pt para fácil lectura.
 
-**Contraste:** Contraste elevado asegurado utilizando fondo oscuro gris carbón  con texto en crema o verde azulado
+- **Contraste:** Contraste elevado asegurado utilizando fondo oscuro gris carbón  con texto en crema o verde azulado
 
-**Animaciones:** Animación de parpadeo de cursor de texto (`_`), apariciones instantáneas tipo "pop-up" sin transiciones suaves, y parpadeo breve (_blink_) en diálogos del Sistema.
+- **Animaciones:** Animación de parpadeo de cursor de texto (`_`), apariciones instantáneas tipo "pop-up" sin transiciones suaves, y parpadeo breve (_blink_) en diálogos del Sistema.
 
 ## Pantallas
 
-- **Menú principal:** Diseñado como el escritorio o pantalla de inicio de un software antiguo con opciones de "Iniciar Demo", "Opciones" y "Salir".
-- **Pausa:** Ventana emergente flotante sobre el juego en ejecución que permite "Continuar", "Reiniciar Nivel" o "Salir al Menú".
-- **Configuración:** Subpantalla básica de ajustes de volumen de audio y controles/teclas.
-- **Inventario:** No aplica
-- **Mapa:** No aplica
-- **Victoria:** Pantalla o ventana de finalización de nivel con el tiempo transcurrido, número de muertes/intentos y un mensaje mordaz del Sistema.
-- **Derrota:** Pantalla de reinicio instantáneo o breve ventana de "Error de Ejecución" con el botón para reintentar de inmediato sin tiempos de carga prolongados.
+- **Menú principal:** escritorio de un software antiguo con Nueva partida, Continuar, Configuración y Salir.
+- **Pausa:** ventana flotante sobre el juego con Continuar, Reiniciar nivel, Configuración y Salir al menú.
+- **Configuración:** Audio, Video, Controles y Accesibilidad.
+- **Nivel completado:** tiempo, muertes y un comentario mordaz de Sistema.exe.
+- **Desenlace:** elección final entre Salir y Quedarse.
+- **Ranking:** introducir el apodo para enviar muertes y tiempo a la app móvil.
 
+No hay pantalla de derrota: Emmet reaparece al instante.
 
 > **Navegación:** [[00 - Índice]] · ← [[03 - Entornos]] · [[05 - Audio y Música]] →
