@@ -4,10 +4,11 @@ Esta página reúne las fichas visuales de **Emmet**, el protagonista, y de **el
 La función narrativa de cada personaje se documenta en [[03 - Personajes]], y el comportamiento y los diálogos del Sistema, en [[03 - Enemigos y NPC]].
 ## Requisitos por personaje
 
-| Personaje    | Modelo/Sprite                                                                                                          | Animaciones                                                                              | VFX                                                                                                            | Estado                                                      |
-| ------------ | ---------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------- |
-| Protagonista | Sprite 2D _pixel art_ de avatar sencillo y de alta visibilidad visual.                                                 | Idle, Caminar, Saltar, Caer, Muerte/Derrota, Reaparición.                                | Partículas de impacto, efecto _glitch_ o fragmentación de píxeles al morir, destello de reaparición.           | Caminar, en reposo, saltar, muerte y reaparicion terminado. |
-| Sistema      | Entidad omnipresente. Representado visualmente mediante ondas de audio/interfaz de voz, íconos de diálogo sarcásticos. | Animación de interfaz/onda de sonido al hablar, aparición de cuadro de texto en pantalla | _Glitch_ visual de pantalla, distorsión CRT, parpadeo de alertas cuando se burla o reacciona ante las muertes. | En definición visual (Borrador)                             |
+| Personaje | Modelo/Sprite                                                                                                          | Animaciones                                                                              | VFX                                                                                                            | Estado                                                            |
+| --------- | ---------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------- |
+| Emmet     | Sprite 2D _pixel art_ de avatar sencillo y de alta visibilidad visual.                                                 | Idle, Caminar, Saltar, Caer, Muerte/Derrota, Reaparición.                                | Partículas de impacto, efecto _glitch_ o fragmentación de píxeles al morir, destello de reaparición.           | Terminado. Caminar, en reposo/idle, saltar, muerte y reaparicion. |
+| Sistema   | Entidad omnipresente. Representado visualmente mediante ondas de audio/interfaz de voz, íconos de diálogo sarcásticos. | Animación de interfaz/onda de sonido al hablar, aparición de cuadro de texto en pantalla | _Glitch_ visual de pantalla, distorsión CRT, parpadeo de alertas cuando se burla o reacciona ante las muertes. | Terminado. Su cuadro de texto.                                    |
+
 ## Emmet el Protagonista
 ---
 Emmet es una figura de cuerpo delgado con una **cabeza grande y redonda** que ocupa casi la mitad de su altura, con un ojo o visor oscuro de gran tamaño en el costado. El cuerpo usa crema como color dominante con un contorno oscuro grueso, lo que lo mantiene legible sobre el gris carbón del fondo y sobre las plataformas marrón rojizo. La silueta simple, de extremidades finas y torso oscuro, permite leer su postura de un vistazo, algo necesario en un plataformero de precisión.
@@ -34,8 +35,10 @@ No aplica: El juego está centrado en plataformas de precisión, observación y 
 
 ## El Sistema
 ---
-El Sistema no tiene cuerpo ni sprite. Se manifiesta únicamente mediante un **cuadro de texto en pantalla** acompañado de **sonido** mientras habla. El cuadro sigue el estilo de la interfaz: fondo gris carbón, borde de píxel y texto en crema con la tipografía **Press Start 2P**, que aparece letra por letra. Su presentación detallada se documenta en [[04 - Interfaz Visual]] y su sonido, en [[05 - Audio y Música]].
+El Sistema no tiene cuerpo. Se manifiesta únicamente mediante un **cuadro de texto en pantalla** acompañado de **sonido** mientras habla. El cuadro sigue el estilo de la interfaz: fondo gris carbón, borde de píxel y texto en crema con la tipografía **Press Start 2P**, que aparece letra por letra. 
+Su presentación detallada se documenta en [[04 - Interfaz Visual]] y su sonido, en [[05 - Audio y Música]].
 
+---
 ## Convenciones
 
 | Aspecto              | Convención                                                                            |
@@ -46,7 +49,7 @@ El Sistema no tiene cuerpo ni sprite. Se manifiesta únicamente mediante un **cu
 | Importacion en Unity | `32` píxeles por unidad, filtro `Point (no filter)`, sin compresión                   |
 | Formato              | Spritesheet  en `.png` horizontal; GIF solo como previsualización en este documento\| |
 | Nombres de archivos  | Personaje_Sistema (`retrato_sistema.png`)                                             |
-| Ubicacion            | `Sprite/ Personajes/`                                                                 |
+| Ubicacion            | `Sprite/ Personajes/` en Unity; img/ en este GDD                                      |
 
 
 
