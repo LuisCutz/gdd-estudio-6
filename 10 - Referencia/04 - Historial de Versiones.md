@@ -1,15 +1,10 @@
 # Historial de Versiones
 
-## Descripción de la sección
-
-Registra los cambios importantes realizados al GDD. Esto permite conocer cómo evolucionó el diseño y cuándo se modificó una decisión.
-
-## Formato
-
-| Versión | Fecha | Cambios principales | Responsable |
-|---|---|---|---|
-| 0.1.0 | | Creación del documento | |
-| | | | |
+| Versión | Fecha | Cambios principales                                                                                                                | Responsable     |
+| ------- | ----- | ---------------------------------------------------------------------------------------------------------------------------------- | --------------- |
+| 0.1.0   |       | Creación del documento a partir de la plantilla. Vison, Diseño, Historia y Mundo, Contenido, Arte y Estudio, Tecnologia y Calidad. | Equipo completo |
+|         |       | Actualización de la ficha, la perspectiva, la tecnología y el audio.                                                               | Equipo completo |
+|         |       |                                                                                                                                    |                 |
 
 ## Convención sugerida
 

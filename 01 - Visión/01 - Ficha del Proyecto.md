@@ -23,7 +23,7 @@ Esta ficha identifica el proyecto de forma rápida. Debe permitir que alguien qu
 **Género principal:** Plataforma
 > Consulta [[01 - Géneros]] y elige el género que mejor describa la experiencia dominante.
 
-**Subgéneros:**  Supervivencia + estrategia
+**Subgéneros:**  Plataformas 2D de precisión con trampas engañosas
 > Consulta [[02 - Subgéneros y Combinaciones]] y selecciona solamente los que aporten información útil.
 
 **Biblioteca de clasificación:** [[00 - Biblioteca de Clasificación]]

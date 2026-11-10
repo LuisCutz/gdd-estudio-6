@@ -23,5 +23,4 @@ Esta sección funciona como una **biblioteca de consulta integrada al GDD**. El 
 ## Resultado
 
 Cuando termines, regresa a:
-
 [[01 - Ficha del Proyecto]]
